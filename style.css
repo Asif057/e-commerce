@@ -86,3 +86,109 @@
     width: 850px;
     text-align: center;
 }
+
+/* Featured Section */
+.featured-section {
+    max-width: 1428px;
+    margin: 0 auto;
+    padding: 0 32px;
+    min-height: 740px;
+}
+
+.featured-section h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    height: 100%;
+}
+
+.card {
+    background: #F5F5F5;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-nike .media {
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-nike .product-img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-nike .content {
+    padding: 28px 40px 44px;
+}
+
+.card-nike .content p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #1A1A1A;
+    max-width: 430px;
+    margin-bottom: 20px;
+}
+
+.btn-pill {
+    background: #111111;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 13px 26px;
+    border-radius: 9999px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s ease;
+}
+
+.btn-pill:hover {
+    background: #333333;
+}
+
+/* Right Card (Hats) */
+.card-hats .media {
+    height: 100%;
+    position: relative;
+}
+
+.card-hats .full-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-hats .overlay {
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+    color: #1A1A1A;
+}
+
+.card-hats .overlay-title {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-nike .media {
+        height: 380px;
+    }
+}
